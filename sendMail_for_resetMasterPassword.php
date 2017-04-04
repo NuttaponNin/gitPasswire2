@@ -4,14 +4,14 @@ $new_password = $_POST['new_password'];
 $comfirm_new_password = $_POST['comfirm_new_password'];
 //$masterID = $_SESSION['masterID']; // --> pass by checkLogin.php
 //receive pk(masterID) for link to email --> change password
-$email = $_POST['emailForgotPass'];
+$email = $_POST['email'];
 $link = "http://localhost:88/Passwire/resetMasterPassword.html";
 $subject = "Passwire Service : Change Password"
 
 if ($new_password == $comfirm_new_password) {
 	//sendMail($masterID,$email);
-	echo "This is Email and New Password.<br>";
-	sendMail($email,$new_password,$link,$subject);
+	//echo "This is Email and New Password.<br>";
+	sendMail($email,$link,$subject);
 	//link + quryString
 } else{
 

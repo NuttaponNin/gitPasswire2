@@ -1,6 +1,6 @@
 <?php
 
-function sendMail($email,$new_password,$link,$subject){
+function sendMail($email,$link,$subject){
 	// echo ($email);
 	// echo "<br>";
 	// echo ($new_password);
@@ -25,7 +25,7 @@ function sendMail($email,$new_password,$link,$subject){
 
         // $mail->AddAddress("nuttapon.kmitl@gmail.com", "Mr.Nuttapon"); // to Address
         $mail->AddAddress($email, "Nuttapon"); // to Address user
-        //$mail-->AddAddress("email user","user name")
+        //$mail-->AddAddress("email user","user name") username in database
 
         $mail->set('X-Priority', '1'); //Priority 1 = High, 3 = Normal, 5 = low
 
