@@ -206,6 +206,7 @@ class SMTP {
 
     return true;
   }
+ 
 
   /**
    * Initiate a TLS communication with the server.
